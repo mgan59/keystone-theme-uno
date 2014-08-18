@@ -1,0 +1,18 @@
+*.swp
+*.un~
+.DS_Store
+node_modules/*
+
+# ignore any custom images added from repo
+public/images/*
+# anti-pattern to include the basic background-cover for uno
+!public/images/background-cover.jpg
+
+
+# ignore bourbon install so that it is the latest build
+# for developers that need it
+assets/scss/bourbon/*
+
+# ignore the sass-cache/
+.sass-cache/*
+**/.sass-cache/*

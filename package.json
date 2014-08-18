@@ -1,0 +1,17 @@
+{
+  "name": "keystone-uno",
+  "version": "0.0.0",
+  "description": "a port of Uno Theme for Ghost to Keystonejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morgan Craft",
+  "license": "Creative Commons 4.0",
+  "dependencies": {
+    "moment": "^2.6.0",
+    "handlebars": "^2.0.0-alpha.2",
+    "lodash": "^2.4.1",
+    "keystone": "^0.2.25"
+  }
+}

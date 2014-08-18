@@ -1,0 +1,23 @@
+{{!< default}}
+
+  <div class="main-post-list">
+
+    <ol class="post-list">
+      {{#each data.posts.results}}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{postUrl slug}}" title="link to {{{title}}}">{{{title}}}</a></h2>
+        <div class="excerpt">{{{content.brief.html}}}&hellip;</div>
+        <div class="post-list__meta">
+            <time datetime="{{publishedDate}}" class="post-list__meta--date date">{{date format="DD MMM YYYY"}}</time> &#8226;
+            <span class="post-list__meta--tags tags">{{{categoryList categories prefix="on "}}}</span>
+        </div>
+        <hr class="post-list__divider" />
+      </li>
+      {{/each}}
+    </ol>
+
+    {{>pagination}}
+
+  </div>
+
+

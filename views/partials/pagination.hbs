@@ -1,0 +1,15 @@
+{{#ifHasPagination data.posts}}
+<hr class="post-list__divider " />
+
+<nav class="pagination" role="navigation">
+    {{#if data.posts.previous}}
+        <a class="newer-posts pagination__newer btn btn-small btn-tertiary" href="{{pageUrl data.posts.prev}}">&larr; Newer Posts</a>
+    {{/if}}
+    <span class="pagination__page-number">Page {{data.posts.currentPage}} of {{data.posts.totalPages}}</span>
+    {{#if data.posts.next}}
+        <a class="older-posts pagination__older btn btn-small btn-tertiary" href="{{pageUrl data.posts.next}}">Older Posts &rarr;</a>
+    {{/if}}
+</nav>
+{{else}}
+{{/ifHasPagination}}
+
